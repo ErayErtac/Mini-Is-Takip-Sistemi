@@ -1,0 +1,97 @@
+/* Temel font ve arka plan ayarý */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
+    color: #212529;
+}
+
+/* Baþlýklar */
+h1, h2, h3 {
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40 !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: #ffc107 !important;
+    }
+
+/* Tablo Stilleri */
+.table th {
+    background-color: #343a40;
+    color: white;
+}
+
+.table td {
+    background-color: white;
+    vertical-align: middle;
+}
+
+/* Butonlar */
+.btn {
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+}
+
+.btn-success {
+    background-color: #198754;
+    border: none;
+}
+
+    .btn-success:hover {
+        background-color: #157347;
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+    .btn-danger:hover {
+        background-color: #bb2d3b;
+    }
+
+/* Rozetler */
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.login-wrapper {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef;
+}
+
+.login-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

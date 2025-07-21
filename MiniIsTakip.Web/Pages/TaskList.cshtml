@@ -1,0 +1,75 @@
+﻿@page
+@model MiniIsTakip.Web.Pages.TaskListModel
+
+@{
+    var role = "";
+    if (HttpContext?.Session != null)
+    {
+        role = HttpContext.Session.GetString("UserRole");
+    }
+}
+
+<h1>İş Listesi</h1>
+
+@if (Model.Tasks.Count == 0)
+{
+    <p>Göreviniz yok.</p>
+}
+
+else
+{
+<table class="table">
+    <thead>
+        <tr>
+            <th>Açıklama</th>
+            <th>Çalışan</th>
+            <th>Durum</th>
+            @if (role == "Calisan")
+            {
+                <th>İşlem</th>
+            }
+            @if (role == "Yonetici")
+            {
+                <th>Sil</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Tasks)
+        {
+            <tr>
+                <td>@item.Description</td>
+                <td>@item.AssignedPerson?.FullName</td>
+                <td>
+                    @if (item.IsCompleted)
+                    {
+                        <span class="badge bg-success">Tamamlandı</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-warning text-dark">Devam Ediyor</span>
+                    }
+                </td>
+                @if (role == "Calisan" && !item.IsCompleted)
+                {
+                    <td>
+                        <form method="post" asp-page-handler="Complete">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-sm btn-success">Tamamla</button>
+                        </form>
+                    </td>
+                }
+                @if (role == "Yonetici")
+                {
+                    <td>
+                        <form method="post" asp-page-handler="Delete">
+                            <input type="hidden" name="id" value="@item.Id" />
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Görevi silmek istediğinize emin misiniz?');">Sil</button>
+                        </form>
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+}

@@ -1,0 +1,16 @@
+﻿@page
+@model MiniIsTakip.Web.Pages.AnaSayfaModel
+@{
+    ViewData["Title"] = "Yönetici Paneli";
+}
+
+<h1>Yönetici Paneli</h1>
+
+<h1>Hoşgeldiniz, @Model.UserFullName</h1>
+
+
+<div>
+    <a asp-page="/TaskCreate" class="btn btn-primary">İş Atama Sayfası</a>
+    <a asp-page="/TaskList" class="btn btn-secondary">İş Listesi</a>
+    <a asp-page="/PersonCreate" class="btn btn-success">Çalışan Ekle</a>
+</div>

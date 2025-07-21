@@ -1,0 +1,11 @@
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\bin\Debug\net9.0\MiniIsTakip.Core.deps.json
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\bin\Debug\net9.0\MiniIsTakip.Core.dll
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\bin\Debug\net9.0\MiniIsTakip.Core.pdb
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.AssemblyInfoInputs.cache
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.AssemblyInfo.cs
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.csproj.CoreCompileInputs.cache
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.dll
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\refint\MiniIsTakip.Core.dll
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\MiniIsTakip.Core.pdb
+C:\Users\Eray\Desktop\Workshop\MiniIsTakip\MiniIsTakip.Core\obj\Debug\net9.0\ref\MiniIsTakip.Core.dll

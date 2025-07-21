@@ -1,0 +1,28 @@
+﻿@page
+@model PersonCrudModel
+
+<h2>Kişi Listesi</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Ad Soyad</th>
+            <th>Email</th>
+            <th>Aktif Mi?</th>
+            <th>Rol</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model.People)
+        {
+            <tr>
+                <td>@person.Id</td>
+                <td>@person.FullName</td>
+                <td>@person.Email</td>
+                <td>@(person.IsActive ? "Evet" : "Hayır")</td>
+                <td>@person.Role</td>
+            </tr>
+        }
+    </tbody>
+</table>
